@@ -1,0 +1,36 @@
+Step 1: Understanding the Requirements
+We need to design a multi-level parking lot system with the following functionalities:
+
+Multi-Level Structure: The system should support multiple levels, each containing parking slots.
+
+vehicles.Vehicle Management: Vehicles can enter and exit the parking lot. The system should allocate and free parking spaces efficiently.
+
+Slot Types: Parking slots should support different vehicle types (e.g., car, bike, truck).
+
+Tracking Availability: The system should track available parking slots in real time.
+
+Efficient Utilization: The system should prioritize optimal space usage while assigning slots.
+
+
+Additional considerations:
+
+Payment system (can be added later).
+Reserved slots for disabled persons.
+Entry and exit gates for handling traffic flow.
+
+
+Step 2: Identifying Core Entities and Relationships
+Based on the requirements, we can identify the following key entities:
+
+ParkingLot (Manages multiple levels)
+ParkingLevel (Manages multiple slots)
+ParkingSlot (Represents an individual slot)
+vehicles.Vehicle (Different types of vehicles)
+ParkingTicket (Issued when a vehicle is parked)
+ParkingAttendant (Handles parking assignments)
+
+Relationships:
+ParkingLot has multiple ParkingLevels (Composition).
+ParkingLevel has multiple ParkingSlots (Aggregation).
+ParkingSlot is assigned to a vehicles.Vehicle (Association).
+ParkingTicket is linked to a vehicles.Vehicle (Association).
