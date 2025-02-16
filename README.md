@@ -18,7 +18,7 @@ SOLID Principles & Design Patterns: Explicitly state where and why you are apply
 
 Incremental Implementation: I will provide the problem statement and initial functional requirements. I may add further requirements incrementally. You should implement the solution step-by-step, explaining your reasoning at each stage.
 
-Include main method: You should run all the features and out put them in console.
+Include main method: Take input from users and print out put in console.
 
 Context Management: If we reach the context window limit, I will type "Continue" and you should resume from where you left off, maintaining the same design and coding style.
 
