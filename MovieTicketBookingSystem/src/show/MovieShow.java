@@ -1,11 +1,12 @@
 package show;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class MovieShow {
     private String movieName;
-    private Long startTime;
-    private Long endTime;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
 
     public MovieShow(String movieName, Long startTime, Long endTime) {
         this.movieName = movieName;
