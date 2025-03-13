@@ -13,7 +13,7 @@ public class PublisherSubscriberDriver {
         pubSubSystem.subscribe("news", newsSubscriber);
         pubSubSystem.subscribe("sports", sportsSubscriber);
 
-        pubSubSystem.publish("news", new Message("Meta is launching a new AI model"));
-        pubSubSystem.publish("sports", new Message("India own the Champion Trophy"));
+        newsPublisher.publish("news", new Message("Meta is launching a new AI model"));
+        sportsPublisher.publish("sports", new Message("India own the Champion Trophy"));
     }
 }
