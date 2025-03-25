@@ -23,7 +23,6 @@ public class FoodDeliveryService {
     private final Map<String, Order> orders;
     private final Map<String, DeliveryAgent> deliveryAgents;
     private final List<OrderObserver> observers;
-    private final ScheduledExecutorService scheduler;
 
     private FoodDeliveryService() {
         customers = new ConcurrentHashMap<>();
